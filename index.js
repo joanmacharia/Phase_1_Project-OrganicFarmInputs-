@@ -7,14 +7,17 @@ const items_in_stock= document .getElementById('itemsstock')
 const seller = document.getElementById('seller')
 const use= document.getElementById('itemUse')
 const image= document.getElementById('image')
-const itemsListUl= document.getElementById('items')
-const productTitle= docunt.getElementById('')
-const productBrand= docunt.getElementById('')
-const productPrice= docunt.getElementById('')
-const productWeight= docunt.getElementById('')
-const productStockStatus= docunt.getElementById('')
-const productSeller= docunt.getElementById('')
-const productUse= docunt.getElementById('')
+const itemsListUl= document.querySelector('#items')
+const productTitle= document.getElementById('product_title')
+const productBrand= document.getElementById('product_brand')
+const productPrice= document.getElementById('product_price')
+const productWeight= document.getElementById('product-weight')
+const productStockStatus= document.getElementById('product_stock_status')
+const productSeller= document.getElementById('product_seller')
+const productUse= document.getElementById('product_use')
+const productimage= document.getElementById('product_image')
+const productId= document.getElementById('product_id')
+const postForm= document.getElementById('postForm')
 
 
 
@@ -35,7 +38,7 @@ function renderAllItems(items ) {
         itemsList.style.cursor="pointer"
         itemsList.style.backgroundColor='green'
         itemsList.style.marginBottom='30 px'  
-        itemsList.innerText = `${item.title}, ${item.brand}`
+        itemsList.innerHTML = `${item.title}, ${item.brand}`
         itemsListUl.append(itemsList)
 
     // Add click event to display each item's info when clicked
@@ -62,7 +65,59 @@ function displayInfo(item){
 
 
 
+// Add an event litesner to the post form
 
+postForm.addEventListener('submit', function(e){
+    e.preventDefault()
+
+    // Fetch request for adding a new item using the post method
+
+
+        fetch("http://localhost:3000/organicFarmInputs",{
+            method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        id: productId,
+        title: productTitle,
+        brand: productBrand,
+        item_weight_kgs: productWeight,
+        price_ksh: productPrice,
+        items_in_stock: productStockStatus,
+        Seller: productSeller,
+        use: productUse,
+        image: productimage,
+    
+    
+      }),
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error))
+        
+        
+    
+    
+    
+})
+
+// Add new item using the post method
+
+
+
+
+function deleteItem(id) {
+    fetch(`http://localhost:3000/organicFarmInputs/${id}`,{
+        method: 'DELETE'
+    })
+    
+    .then(response => response.json())
+    .then(() => alert('Item deleted succesfully'))
+    .catch(error => console.error(error))
+}
 
 
 getAllItems()
+deleteItem()
