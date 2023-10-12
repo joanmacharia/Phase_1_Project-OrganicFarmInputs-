@@ -9,6 +9,12 @@ const use= document.getElementById('itemUse')
 const image= document.getElementById('image')
 const itemsListUl= document.getElementById('items')
 const productTitle= docunt.getElementById('')
+const productBrand= docunt.getElementById('')
+const productPrice= docunt.getElementById('')
+const productWeight= docunt.getElementById('')
+const productStockStatus= docunt.getElementById('')
+const productSeller= docunt.getElementById('')
+const productUse= docunt.getElementById('')
 
 
 
