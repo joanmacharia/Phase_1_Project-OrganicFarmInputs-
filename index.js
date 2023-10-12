@@ -114,7 +114,7 @@ function deleteItem(id) {
     })
     
     .then(response => response.json())
-    .then(() => alert('Item deleted succesfully'))
+    .then((data) => console.log(data) )
     .catch(error => console.error(error))
 }
 

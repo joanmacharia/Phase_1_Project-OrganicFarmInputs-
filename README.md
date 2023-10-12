@@ -20,7 +20,7 @@
        
 
 ## Known Bugs
-    The application wforks  well, no bugs.
+    The application works  well, no bugs.
     
 ## Technologies used
     - JS

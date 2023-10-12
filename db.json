@@ -1,173 +1,180 @@
 {
-    "organicFarmInputs": [
-      {
-        "id": "1",
-        "title": "Chicken Manure",
-        "brand":"Gardeners",
-        "item_weight_kgs": 10,
-        "price_ksh":500,
-        "items_in_stock":"Available",
-        "Seller":"Copia",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://mobileimages.lowes.com/productimages/1da24a8c-3288-42d5-a1d2-5676beadfc21/00604651.jpg"
-      },
-      {
-        "id": "2",
-        "title": "Chicken Manure",
-        "brand":"REDI-GRO",
-        "item_weight_kgs": 50,
-        "price_ksh":2500,
-        "items_in_stock":"Available",
-        "Seller":"Copia",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5IMd7pi52nwGgzlvUm4xQbWajgiHlJSHAqxNvW5MwB-90PrJ8Qm0VAjQjn3hu66Gs0mM&usqp=CAU"
-        
-      },
-      {
-        "id": "3",
-        "title": "Bone Meal",
-        "brand":"DR EARTH",
-        "item_weight_kgs": 1.133,
-        "price_ksh":1500,
-        "items_in_stock":"Available",
-        "Seller":"DR EARTH",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://drearth.com/wp-content/uploads/Singles_BoneMeal_718-1536x1536.jpg"
-      },
-      {
-        "id": "4",
-        "title": "Bone Meal",
-        "brand":"SDF India",
-        "item_weight_kgs": 25,
-        "price_ksh":5000,
-        "items_in_stock":"Available",
-        "Seller":"Amazon",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://m.media-amazon.com/images/I/61BN7u2h5PL._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": "5",
-        "title": "Bone Meal",
-        "brand":"Organic Plant",
-        "item_weight_kgs": 30,
-        "price_ksh":6500,
-        "items_in_stock":"Out of Stock",
-        "Seller":"Amazon",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://m.media-amazon.com/images/I/6189Ymn692L._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": "6",
-        "title": "Blood Meal",
-        "brand":"Miracle.Gro",
-        "item_weight_kgs": 5,
-        "price_ksh":4500,
-        "items_in_stock":"Available",
-        "Seller":"Miracle Gro",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://www.gardeningknowhow.com/wp-content/uploads/2009/11/blood-meal.jpg"
-      },
-      {
-        "id": "7",
-        "title": "Blood Meal",
-        "brand":"BURPEE",
-        "item_weight_kgs": 1.133,
-        "price_ksh":1500,
-        "items_in_stock":"Out of Stock",
-        "Seller":"Amazon",
-        "use": "Gardening,Organic,Plant Food",
-        "image": "https://m.media-amazon.com/images/I/61vM2KsOMcL.jpg"
-      },
-      {
-        "id": "8",
-        "title": "Blood Meal",
-        "brand":"C.I.L",
-        "item_weight_kgs": 1.3,
-        "price_ksh":2000,
-        "items_in_stock":"Available",
-        "Seller":"C.I.L",
-        "use": "Gardening,Organic,Plant Food",
-        "image": "https://cdn.rona.ca/images/85665130_L.jpg"
-      },
-      {
-        "id": "9",
-        "title": "Blood Meal",
-        "brand":"Espoma",
-        "item_weight_kgs": 1.5,
-        "price_ksh":2500,
-        "items_in_stock":"Available",
-        "use": "Gardening,Organic,Plant Food",
-        "image": "https://images.thdstatic.com/productImages/bfdc6df9-22c5-43c9-872f-263e6ff2b62a/svn/espoma-organic-plant-food-100532324-64_1000.jpg"
-      },
-      {
-        "id": "10",
-        "title": "Fish Fertilizer",
-        "brand":"ALASKA",
-        "item_weight_kgs": 10,
-        "price_ksh":5500,
-        "items_in_stock":"Available",
-        "Seller":"Amazon",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://m.media-amazon.com/images/I/71kqtu2O6ML.jpg"
-      },
-      {
-        "id": "11",
-        "title": "Fish Fertilizer",
-        "brand":"Kemgro",
-        "item_weight_kgs": 25,
-        "price_ksh":10000,
-        "items_in_stock":"Available",
-        "Seller":"Kemgro",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://kemgro.com.au/wp-content/uploads/2021/12/Kemgro-20Ltr-Fish-Fertilizerv4.png"
-      },
-      {
-        "id": "12",
-        "title": "Cotton Seed Meal",
-        "brand":"North Country Organics",
-        "item_weight_kgs": 30,
-        "price_ksh":15000,
-        "items_in_stock":"Available",
-        "Seller":"North Country Organics",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://norganics.com/wp-content/uploads/2014/05/CottonSeedMeal1.png"
-      },
-      {
-        "id": "13",
-        "title": "Cotton Seed Meal",
-        "brand":"Espoma",
-        "item_weight_kgs": 1.5,
-        "price_ksh":2500,
-        "items_in_stock":"Few Left",
-        "Seller":"Amazon",
-        "use": "Gardening,Organic,Plant Food.",
-        "image": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/organic-cottonseed-meal.jpg"
-      },
-      {
-        "id": "14",
-        "title": "Organic Insecticide",
-        "brand":"Garden Safe",
-        "item_weight_kgs": 4.5,
-        "price_ksh":4500,
-        "items_in_stock":"Out of Stock",
-        "Seller":"Amazon",
-        "use": "Gardening,Organic Insecticide.",
-        "image": "https://t8u6c2z7.stackpathcdn.com/~/media/HomeAndGarden/Garden%20Safe/Images/Product/New%20Product%20Images/WF93217_GardenSafe_MainImages_1_ProductImageHero.jpg"
-      },
-      {
-        "id": "15",
-        "title": "Organic Insecticide",
-        "brand":"Botanicare Organocide",
-        "item_weight_kgs": 10,
-        "price_ksh":3500,
-        "items_in_stock":"Only 1 Left",
-        "Seller":"Amazon",
-        "use": "Gardening,Organic Insecticide,Pesticide and Fungicide.",
-        "image": "https://cdn.shoplightspeed.com/shops/638365/files/24181805/1600x2048x2/botanicare-organocide-3-in-1-organic-insecticide-q.jpg"
-      }
-    ]
-   }
-   
-   
-   
-   
+  "organicFarmInputs": [
+    {
+      "id": "1",
+      "title": "Chicken Manure",
+      "brand": "Gardeners",
+      "item_weight_kgs": 10,
+      "price_ksh": 500,
+      "items_in_stock": "Available",
+      "Seller": "",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://mobileimages.lowes.com/productimages/1da24a8c-3288-42d5-a1d2-5676beadfc21/00604651.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Chicken Manure",
+      "brand": "REDI-GRO",
+      "item_weight_kgs": 50,
+      "price_ksh": 2500,
+      "items_in_stock": "Available",
+      "Seller": "Copia",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5IMd7pi52nwGgzlvUm4xQbWajgiHlJSHAqxNvW5MwB-90PrJ8Qm0VAjQjn3hu66Gs0mM&usqp=CAU"
+    },
+    {
+      "id": "3",
+      "title": "Bone Meal",
+      "brand": "DR EARTH",
+      "item_weight_kgs": 1.133,
+      "price_ksh": 1500,
+      "items_in_stock": "Available",
+      "Seller": "DR EARTH",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://drearth.com/wp-content/uploads/Singles_BoneMeal_718-1536x1536.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Bone Meal",
+      "brand": "SDF India",
+      "item_weight_kgs": 25,
+      "price_ksh": 5000,
+      "items_in_stock": "Available",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://m.media-amazon.com/images/I/61BN7u2h5PL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Bone Meal",
+      "brand": "Organic Plant",
+      "item_weight_kgs": 30,
+      "price_ksh": 6500,
+      "items_in_stock": "Out of Stock",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://m.media-amazon.com/images/I/6189Ymn692L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Blood Meal",
+      "brand": "Miracle.Gro",
+      "item_weight_kgs": 5,
+      "price_ksh": 4500,
+      "items_in_stock": "Available",
+      "Seller": "Miracle Gro",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2009/11/blood-meal.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Blood Meal",
+      "brand": "BURPEE",
+      "item_weight_kgs": 1.133,
+      "price_ksh": 1500,
+      "items_in_stock": "Out of Stock",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic,Plant Food",
+      "image": "https://m.media-amazon.com/images/I/61vM2KsOMcL.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Blood Meal",
+      "brand": "C.I.L",
+      "item_weight_kgs": 1.3,
+      "price_ksh": 2000,
+      "items_in_stock": "Available",
+      "Seller": "C.I.L",
+      "use": "Gardening,Organic,Plant Food",
+      "image": "https://cdn.rona.ca/images/85665130_L.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Blood Meal",
+      "brand": "Espoma",
+      "item_weight_kgs": 1.5,
+      "price_ksh": 2500,
+      "items_in_stock": "Available",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic,Plant Food",
+      "image": "https://images.thdstatic.com/productImages/bfdc6df9-22c5-43c9-872f-263e6ff2b62a/svn/espoma-organic-plant-food-100532324-64_1000.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Fish Fertilizer",
+      "brand": "ALASKA",
+      "item_weight_kgs": 10,
+      "price_ksh": 5500,
+      "items_in_stock": "Available",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://m.media-amazon.com/images/I/71kqtu2O6ML.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Fish Fertilizer",
+      "brand": "Kemgro",
+      "item_weight_kgs": 25,
+      "price_ksh": 10000,
+      "items_in_stock": "Available",
+      "Seller": "Kemgro",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://kemgro.com.au/wp-content/uploads/2021/12/Kemgro-20Ltr-Fish-Fertilizerv4.png"
+    },
+    {
+      "id": "12",
+      "title": "Cotton Seed Meal",
+      "brand": "North Country Organics",
+      "item_weight_kgs": 30,
+      "price_ksh": 15000,
+      "items_in_stock": "Available",
+      "Seller": "North Country Organics",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://norganics.com/wp-content/uploads/2014/05/CottonSeedMeal1.png"
+    },
+    {
+      "id": "13",
+      "title": "Cotton Seed Meal",
+      "brand": "Espoma",
+      "item_weight_kgs": 1.5,
+      "price_ksh": 2500,
+      "items_in_stock": "Few Left",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic,Plant Food.",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/organic-cottonseed-meal.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Organic Insecticide",
+      "brand": "Garden Safe",
+      "item_weight_kgs": 4.5,
+      "price_ksh": 4500,
+      "items_in_stock": "Out of Stock",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic Insecticide.",
+      "image": "https://t8u6c2z7.stackpathcdn.com/~/media/HomeAndGarden/Garden%20Safe/Images/Product/New%20Product%20Images/WF93217_GardenSafe_MainImages_1_ProductImageHero.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Organic Insecticide",
+      "brand": "Botanicare Organocide",
+      "item_weight_kgs": 10,
+      "price_ksh": 3500,
+      "items_in_stock": "Only 1 Left",
+      "Seller": "Amazon",
+      "use": "Gardening,Organic Insecticide,Pesticide and Fungicide.",
+      "image": "https://cdn.shoplightspeed.com/shops/638365/files/24181805/1600x2048x2/botanicare-organocide-3-in-1-organic-insecticide-q.jpg"
+    },
+    {
+      "id": {},
+      "title": null,
+      "brand": null,
+      "item_weight_kgs": null,
+      "price_ksh": null,
+      "items_in_stock": null,
+      "Seller": null,
+      "use": null,
+      "image": null
+    }
+  ]
+}
