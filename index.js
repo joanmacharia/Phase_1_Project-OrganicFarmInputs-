@@ -8,6 +8,7 @@ const seller = document.getElementById('seller')
 const use= document.getElementById('itemUse')
 const image= document.getElementById('image')
 const itemsListUl= document.getElementById('items')
+const productTitle= docunt.getElementById('')
 
 
 
@@ -52,6 +53,9 @@ function displayInfo(item){
     use.innerText= item.use
     image.src = item.image
 }
+
+
+
 
 
 
