@@ -18,22 +18,31 @@ const productUse= document.getElementById('product_use')
 const productimage= document.getElementById('product_image')
 const productId= document.getElementById('product_id')
 const postForm= document.getElementById('postForm')
+const deleteButton= document.getElementById('deleteButton')
+
+let organicFarmInputs= []
+let selectedItemId;
 
 
 
-
-
-// Fetch every item
+// Fetch all items
 
 function getAllItems(){
     fetch('http://localhost:3000/organicFarmInputs')
     .then(response => response.json())
-    .then(renderAllItems)
+    .then(data => 
+        {
+            organicFarmInputs = data
+            selectedItemId = String(organicFarmInputs[0].id)
+            renderAllItems()
+            setRamenDetailsById(selectedItemId)
+        })
+    
 }
 
 function renderAllItems(items ) {
     itemsListUl.innerHTML= 'Click on item to view info!'
-    items.forEach(item => {
+    organicFarmInputs.forEach(item => {
         const itemsList = document.createElement('li')
         itemsList.style.cursor="pointer"
         itemsList.style.backgroundColor='green'
@@ -50,7 +59,7 @@ function renderAllItems(items ) {
 
 
 
-// Display film info
+// Display item info
 
 function displayInfo(item){
     title.innerText = item.title
@@ -64,6 +73,18 @@ function displayInfo(item){
 }
 
 
+// set details of selected item by id
+function setItemsDetailsById(id){
+    const selected = organicFarmInputs.find(item => item.id == id)
+    title.innerText = selected.title
+    brand.innerText = selected.brand
+    price.innerText = selected.price_ksh
+    item_weight.innerText = selected.item_weight_kgs
+    items_in_stock.innerText = selected.items_in_stock
+    seller.innerText = selected.Seller
+    use.innerText= selected.use
+    image.src = selected.image
+}  
 
 // Add an event litesner to the post form
 
@@ -108,14 +129,21 @@ postForm.addEventListener('submit', function(e){
 
 
 
-function deleteItem(id) {
-    fetch(`http://localhost:3000/organicFarmInputs/${id}`,{
+function deleteItem() {
+    deleteButton.addEventListener('click', () => {
+    fetch(`http://localhost:3000/organicFarmInputs/${selectedItemId}`,{
         method: 'DELETE'
     })
     
-    .then(response => response.json())
-    .then((data) => console.log(data) )
-    .catch(error => console.error(error))
+   . then(response => {
+        if (response.ok) {
+            organicFarmInputs = organicFarmInputs.filter(r => response.id != selectedItemId)
+            selectedItemId = organicFarmInputs[0].id
+            setItemDetailsById(selectedRamenId)
+            renderAllItems()
+        }
+    })
+})
 }
 
 
