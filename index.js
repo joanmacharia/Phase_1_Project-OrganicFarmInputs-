@@ -35,7 +35,7 @@ function getAllItems(){
             organicFarmInputs = data
             selectedItemId = String(organicFarmInputs[0].id)
             renderAllItems()
-            setItemDetailsById(selectedItemId)
+            setItemsDetailsById(selectedItemId)
         })
     
 }
