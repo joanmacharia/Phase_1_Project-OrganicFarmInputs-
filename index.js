@@ -45,7 +45,7 @@ function renderAllItems() {
     organicFarmInputs.forEach(item => {
         const itemsList = document.createElement('li')
         itemsList.style.cursor="pointer"
-        itemsList.style.backgroundColor='green'
+        itemsList.style.backgroundColor='greenyellow'
         itemsList.style.marginBottom='30 px'  
         itemsList.innerHTML = `${item.title}, ${item.brand}`
         itemsListUl.append(itemsList)
@@ -135,11 +135,12 @@ function deleteItem() {
     })
     
    . then(response => {
-        if (response.ok) {
-            organicFarmInputs = organicFarmInputs.filter(r => response.id != selectedItemId)
+        if (response) {
+            organicFarmInputs = organicFarmInputs.filter(item => response.id != selectedItemId)
             selectedItemId = organicFarmInputs.id
-            setItemDetailsById(selectedRamenId)
+            setItemDetailsById(selectedItemId)
             renderAllItems()
+            alert('Item Deleted Successfully')
         }
     })
 })
