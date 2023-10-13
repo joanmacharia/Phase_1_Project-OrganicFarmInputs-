@@ -28,7 +28,7 @@ let selectedItemId;
 // Fetch all items
 
 function getAllItems(){
-    fetch('http://localhost:3000/organicFarmInputs')
+    fetch('https://organic-farm-inputs-website.onrender.com/organicFarmInputs')
     .then(response => response.json())
     .then(data => 
         {
@@ -94,7 +94,7 @@ postForm.addEventListener('submit', function(e){
     // Fetch request for adding a new item using the post method
 
 
-        fetch("http://localhost:3000/organicFarmInputs",{
+        fetch("https://organic-farm-inputs-website.onrender.com/organicFarmInputs",{
             method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -130,7 +130,7 @@ postForm.addEventListener('submit', function(e){
 // Delete item
 function deleteItem() {
     deleteButton.addEventListener('click', () => {
-    fetch(`http://localhost:3000/organicFarmInputs/${selectedItemId}`,{
+    fetch(`https://organic-farm-inputs-website.onrender.com/organicFarmInputs/${selectedItemId}`,{
         method: 'DELETE'
     })
     
