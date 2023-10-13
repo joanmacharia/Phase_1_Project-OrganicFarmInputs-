@@ -30,13 +30,13 @@
 ## Deliverables
 As a user, I can:
 
-1.See the item's details, including its title, brand, price, weight, stock status,seller,use and image when the page loads. You will need to make a GET request to the following endpoint 'http://localhost:3000/organicFarmInputs' to retrieve the items data data.
+1.See the item's details, including its title, brand, price, weight, stock status,seller,use and image when the page loads. You will need to make a GET request to the following endpoint "https://organic-farm-inputs-website.onrender.com/organicFarmInputs" to retrieve the items data data.
 
-2.Add a new product in the form provided in the footer when the page loads. You will need to make a POST request to the following endpoint to 'http://localhost:3000/organicFarmInputs' post the item's data.
+2.Add a new product in the form provided in the footer when the page loads. You will need to make a POST request to the following endpoint to "https://organic-farm-inputs-website.onrender.com/organicFarmInputs" post the item's data.
 
-3.Delete an item that is no longer in the market.You will need to make a DELETE request to the following endpoint 'http://localhost:3000/organicFarmInput' to retrieve the items data.
+3.Delete an item that is no longer in the market.You will need to make a DELETE request to the following endpoint "https://organic-farm-inputs-website.onrender.com/organicFarmInputs"organicFarmInput' to retrieve the items data.
 
-4.Update an item's details for example the item's price,weight,stock status and seller.You will need to make a PATCH request to the following endpoint 'http://localhost:3000/organicFarmInputs' to retrieve the items data.
+4.Update an item's details for example the item's price,weight,stock status and seller.You will need to make a PATCH request to the following endpoint "https://organic-farm-inputs-website.onrender.com/organicFarmInputs" to retrieve the items data.
 
 
 
