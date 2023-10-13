@@ -138,7 +138,7 @@ function deleteItem() {
         if (response) {
             organicFarmInputs = organicFarmInputs.filter(item => response.id != selectedItemId)
             selectedItemId = organicFarmInputs.id
-            setItemDetailsById(selectedItemId)
+            setItemsDetailsById(selectedItemId)
             renderAllItems()
             alert('Item Deleted Successfully')
         }
