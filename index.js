@@ -124,7 +124,6 @@ postForm.addEventListener('submit', function(e){
     
 })
 
-// Add new item using the post method
 
 
 
