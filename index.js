@@ -39,8 +39,8 @@ function getAllItems(){
         })
     
 }
-
-function renderAllItems(items ) {
+// Add individual items to the list
+function renderAllItems() {
     itemsListUl.innerHTML= 'Click on item to view info!'
     organicFarmInputs.forEach(item => {
         const itemsList = document.createElement('li')
@@ -101,33 +101,33 @@ postForm.addEventListener('submit', function(e){
         Accept: "application/json",
       },
       body: JSON.stringify({
-        id: productId,
-        title: productTitle,
-        brand: productBrand,
-        item_weight_kgs: productWeight,
-        price_ksh: productPrice,
-        items_in_stock: productStockStatus,
-        Seller: productSeller,
-        use: productUse,
-        image: productimage,
+        id: productId.value,
+        title: productTitle.value,
+        brand: productBrand.value,
+        item_weight_kgs: productWeight.value,
+        price_ksh: productPrice.value,
+        items_in_stock: productStockStatus.value,
+        Seller: productSeller.value,
+        use: productUse.value,
+        image: productimage.value,
     
     
       }),
     })
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            organicFarmInputs.push(data)
+            displayInfo(data)
+        })
         .catch(error => console.error(error))
         
         
-    
-    
-    
-})
+ })
 
 
 
 
-
+// Delete item
 function deleteItem() {
     deleteButton.addEventListener('click', () => {
     fetch(`http://localhost:3000/organicFarmInputs/${selectedItemId}`,{
@@ -137,7 +137,7 @@ function deleteItem() {
    . then(response => {
         if (response.ok) {
             organicFarmInputs = organicFarmInputs.filter(r => response.id != selectedItemId)
-            selectedItemId = organicFarmInputs[0].id
+            selectedItemId = organicFarmInputs.id
             setItemDetailsById(selectedRamenId)
             renderAllItems()
         }
