@@ -1,17 +1,6 @@
 {
   "organicFarmInputs": [
     {
-      "id": "1",
-      "title": "Chicken Manure",
-      "brand": "Gardeners",
-      "item_weight_kgs": 10,
-      "price_ksh": 500,
-      "items_in_stock": "Available",
-      "Seller": "",
-      "use": "Gardening,Organic,Plant Food.",
-      "image": "https://mobileimages.lowes.com/productimages/1da24a8c-3288-42d5-a1d2-5676beadfc21/00604651.jpg"
-    },
-    {
       "id": "2",
       "title": "Chicken Manure",
       "brand": "REDI-GRO",
